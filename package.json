@@ -1,0 +1,15 @@
+{
+  "name": "jekyll-theme-foundation",
+  "version": "1.0.0",
+  "description": "Barebones Jekyll theme with Foundation",
+  "main": "index.js",
+  "repository": "https://github.com/gnarlacious/jekyll-theme-foundation",
+  "author": "whosdustin <dustin@delatore.me>",
+  "license": "MIT",
+  "devDependencies": {
+    "coffee-script": "^1.12.5",
+    "foundation-sites": "^6.4.3",
+    "gulp": "^3.9.1",
+    "motion-ui": "^1.2.3"
+  }
+}

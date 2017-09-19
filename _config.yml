@@ -1,0 +1,28 @@
+title: Your awesome title
+author: GitHub User
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+twitter_username: jekyllrb
+github_username:  jekyll
+
+# Foundation date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+jekyll-theme-foundation:
+  date_format: "%b %-d, %Y"
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-foundation
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - jekyll-theme-foundation.gemspec
+  - node_modules
+  - gulpfile.coffee
+  - LICENSE.txt
+  - yarn.lock
+  - package.json
+  - README.md

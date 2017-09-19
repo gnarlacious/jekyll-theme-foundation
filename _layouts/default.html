@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html class="no-js" lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+    <a class="show-on-focus" href="#main">Skip to content</a>
+
+    <div id="main" role="main">
+      {{ content }}
+    </div>
+
+    {% include scripts.html %}
+
+  </body>
+</html>
