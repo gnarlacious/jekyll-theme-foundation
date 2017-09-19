@@ -24,6 +24,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - jekyll-theme-foundation.gemspec
+  - *.gem
   - node_modules
   - gulpfile.coffee
   - LICENSE.txt
