@@ -8,10 +8,14 @@ description: > # this means to ignore newlines until "baseurl:"
 twitter_username: jekyllrb
 github_username:  jekyll
 
-# Foundation date format
+# Jekyll Theme Foundation date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 jekyll-theme-foundation:
   date_format: "%b %-d, %Y"
+
+has_header: true
+header_pages:
+  - about.html
 
 # Build settings
 markdown: kramdown

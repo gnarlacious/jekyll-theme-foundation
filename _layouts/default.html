@@ -6,6 +6,10 @@
   <body>
     <a class="show-on-focus" href="#main">Skip to content</a>
 
+    {% if site.has_header %}
+      {% include header.html %}
+    {% endif %}
+
     <div id="main" role="main">
       {{ content }}
     </div>
