@@ -11,7 +11,12 @@
     {% include google-analytics.html %}
   {% endif %}
 
-  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl | prepend: site.url }}">
+  {% if site.styles != nil %}
+    {% assign file_name = site.styles.file | default: 'main.css' %}
+    <link rel="stylesheet" href="{{ file_name | prepend: site.styles.dir | relative_url }}">
+  {% else %}
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  {% endif %}
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 </head>

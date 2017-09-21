@@ -13,9 +13,18 @@ github_username:  jekyll
 jekyll-theme-foundation:
   date_format: "%b %-d, %Y"
 
-has_header: true
+
 header_pages:
   - about.html
+
+# Add logo image path for header logo
+# logo: /images/logo.png
+
+# Allows stylesheet override to update Foundation _settings.
+# styles:
+#   dir: /css/  # Stylesheet directory
+#   file: main.css # Stylesheet filename
+
 
 # Build settings
 markdown: kramdown
@@ -23,11 +32,10 @@ theme: jekyll-theme-foundation
 exclude:
   - Gemfile
   - Gemfile.lock
-  - jekyll-theme-foundation.gemspec
-  - *.gem
   - node_modules
   - gulpfile.coffee
   - LICENSE.txt
   - yarn.lock
   - package.json
   - README.md
+  - jekyll-theme-foundation.gemspec

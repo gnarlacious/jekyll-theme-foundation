@@ -6,7 +6,7 @@
   <body>
     <a class="show-on-focus" href="#main">Skip to content</a>
 
-    {% if site.has_header %}
+    {% if site.header_pages != nil or site.logo != nil %}
       {% include header.html %}
     {% endif %}
 

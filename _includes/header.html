@@ -10,7 +10,15 @@
   <div class="top-bar" id="responsive-menu">
     <div class="top-bar-left">
       <ul class="menu">
-        <li class="menu-text"><a href="/">{{ site.title | escape }}</a></li>
+        <li class="menu-text">
+          <a href="/">
+            {% unless site.logo == nil %}
+              <img src="{{ site.logo }}" alt="{{site.title | escape }}">
+            {% else %}
+              {{ site.title | escape }}
+            {% endunless %}
+          </a>
+        </li>
       </ul>
     </div>
     {% if page_paths %}
