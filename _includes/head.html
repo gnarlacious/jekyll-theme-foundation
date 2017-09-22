@@ -11,6 +11,10 @@
     {% include google-analytics.html %}
   {% endif %}
 
+  {% if site.google_fonts != nil %}
+    <link href="https://fonts.googleapis.com/css?family={{ site.google_fonts }}" rel="stylesheet">
+  {% endif %}
+
   {% if site.styles != nil %}
     {% assign file_name = site.styles.file | default: 'main.css' %}
     <link rel="stylesheet" href="{{ file_name | prepend: site.styles.dir | relative_url }}">

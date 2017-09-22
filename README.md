@@ -1,9 +1,5 @@
 # jekyll-theme-foundation
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes` and your sass in `_sass`. To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
 Add this line to your Jekyll site's `Gemfile`:
@@ -28,11 +24,43 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, and/or sass.
+### Layouts
+Refers to files within the `_layouts` directory, that define the markup for your theme.
+
+- `default.html` — The base layout that lays the foundation for subsequent layouts. The derived layouts inject their contents into this file at the line that says {{ content }} and are linked to this file via FrontMatter declaration layout: default.
+- `home.html` — The layout for your landing-page / home-page / index-page.
+- `page.html` — The layout for your documents that contain FrontMatter, but are not posts.
+- `post.html` — The layout for your posts.
+
+### Includes
+Refers to snippets of code within the `_includes` directory that can be inserted in multiple layouts (and another include-file as well) within the same theme-gem.
+
+- `disqus-comments.html` — Code to markup disqus comment box.
+- `footer.html` — Defines the site's footer section.
+- `google-analytics.html` — Inserts Google Analytics module (active only in production environment).
+- `head.html` — Code-block that defines the ``<head></head>`` in default layout.
+- `header.html` — Defines the site's main header section. By default, pages with a defined title attribute will have links displayed here.
+
+### Sass
+
+Refers to `.scss` files within the `_sass` directory that define the theme's styles.
+
+Foundation 6.4.
+
+Changing theme colors and layout.
+
+Create two folders inside your root folder.
+
+
+Add `assets/css/main.scss` inside your project.
+
+Add `_sass/settings.scss` inside the project folder. I
+
+
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/gnarlacious/jekyll-theme-foundation. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 ## Development
 
@@ -45,4 +73,3 @@ When your theme is released, only the files in `_layouts`, `_includes`, and `_sa
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-

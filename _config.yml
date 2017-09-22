@@ -17,14 +17,10 @@ jekyll-theme-foundation:
 header_pages:
   - about.html
 
+google_fonts: Playfair+Display|Amiri
+
 # Add logo image path for header logo
 # logo: /images/logo.png
-
-# Allows stylesheet override to update Foundation _settings.
-# styles:
-#   dir: /css/  # Stylesheet directory
-#   file: main.css # Stylesheet filename
-
 
 # Build settings
 markdown: kramdown

@@ -2,4 +2,34 @@
 layout: default
 ---
 
-{{ content }}
+<div class="grid-container">
+
+  <section>
+    {{ content }}
+  </section>
+
+  <section>
+    <h1>Posts</h1>
+    <div class="grid-y" style="height: 100%">
+      {% for post in site.posts %}
+        <div class="cell">
+          <div class="card">
+            <div class="card-section">
+              <h2><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2>
+              {% if page.excerpt %}
+                {{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}
+              {% elsif page.description %}
+                {{ page.description }}
+              {% else %}{% endif %}
+              {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+              <small>{{ post.date | date: date_format }}</small>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <p>Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
+</div>
